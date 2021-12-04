@@ -7,7 +7,7 @@
 lxc-create -n relay1 -t download -- -d debian -r buster -a amd64 --keyserver hkp://keys.openpgp.org:80
 
 #An example of how you can move a container and retain permissions
-rsync -aogzHAXER --numeric-ids --inplace --no-whole-file --delete-delay --force --human-readable /src/location/relay1  ${HOME}/.local/share/lxc/relay1
+#rsync -aogzHAXER --numeric-ids --inplace --no-whole-file --delete-delay --force --human-readable /src/location/relay1  ${HOME}/.local/share/lxc/relay1
 
 #check the config file in repo for an example of what it should look like
 
