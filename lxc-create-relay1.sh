@@ -30,6 +30,6 @@ apt-get install postfix mailutils rsyslog
 #check main.cf for an example config, you might want to make your interface static ip
 #now, make your changes and then..
 systemctl restart postfix
-echo "This is a test from our new virtualized containter relay server" | mail -s "Container New Relay Test Email" youremailaddress@here.com -a "FROM:youremailaddress@here.com"
+echo "This is a test from our new virtualized container relay server" | mail -s "Container New Relay Test Email" youremailaddress@here.com -a "FROM:youremailaddress@here.com"
 
 ######RELAY#######
