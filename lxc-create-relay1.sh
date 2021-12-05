@@ -12,8 +12,7 @@ lxc-create -n relay1 -t download -- -d debian -r buster -a amd64 --keyserver hkp
 #check the config file in repo for an example of what it should look like
 
 #start the relay1 container
-#lxc-start -n relay1 -f  ${HOME}/.local/share/lxc/relay1/config -d
-lxc-start -n relay1
+lxc-start -n relay1 -d
 
 #attach to the container.  Now interacting as root of relay1
 lxc-attach -n relay1
